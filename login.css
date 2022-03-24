@@ -33,7 +33,7 @@ body {
   font-size: 1.8rem;
   margin-left: 8px;
 }
-.container p {
+.desc {
   opacity: 0.6;
   margin: 15px 0;
 }
@@ -46,12 +46,25 @@ body {
   padding: 10px;
 }
 
+.container input[type="date"] {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
 .container input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="date"] {
   width: 100%;
   border-radius: 8px;
   border: 1px solid #e8e8e8;
 }
+
+input[type="date"]:not(.has-value):before{
+    color: lightgray;
+    content: attr(placeholder);
+  }
+
+  
 input#chcRememberMe {
   transform: scale(1.3);
   border: 1px solid #dddddd;
@@ -92,6 +105,7 @@ input#chcRememberMe {
   color: #ffffff;
   font-size: 1.2rem;
   padding: 15px;
+  cursor: pointer;
 }
 
 .signup p {
@@ -115,8 +129,14 @@ input#chcRememberMe {
 
 .logo img {
   width: 15px;
-  :#11B53D ;
 }
 .header {
   display: flex;
+}
+
+.info {
+    color: #000000;    
+    opacity: 0.5;
+    font-size: small;
+    margin-top: 0px;
 }

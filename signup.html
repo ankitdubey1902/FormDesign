@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
@@ -12,9 +12,9 @@
       <div class="container">
         <div class="header">
           <div class="logo">
-            <img src="img/icons8-key.svg" alt="key" />
+            <img src="img/shopping-checklist-svgrepo-com.svg" alt="key" />
           </div>
-          <h2 class="logo-h2">Log in</h2>
+          <h2 class="logo-h2">Sign up</h2>
         </div>
         
         <p class="desc">
@@ -28,32 +28,48 @@
         <input
           id="txtusername"
           type="text"
-          placeholder="Enter your email"
+          placeholder="example@mail.com"
         /><br />
         <label id="lblpassword" for="txtpassword" name="lblpassword"
-          >Password <span class="danger">*</span></label
+          >Create a password <span class="danger">*</span></label
         ><br />
         <input
           id="txtpassword"
           type="password"
-          placeholder="Enter your password"
-        /><br />
+          placeholder="at least 8 characters"
+        />
+        <br />
+        <label id="lbldob" for="txtdob" name="lbldob"
+          >Date of birth <span class="danger">*</span></label
+        >
+        <!-- <input
+          id="dob"
+          type="date"
+          placeholder="MM / DD / YYYY"
+          value="MM / DD / YYYY"
+        /> -->
+        <input type="text" placeholder="mm / dd / yyyy"
+                    onfocus="(this.type='date')" onblur="(this.type='text')">
+                    
+        <br />
+        <p class="info">We want to give a special treat on your birthday</p>
+        <br>
         <div class="form-group">
           <div>
             <label>
               <input type="checkbox" id="chcRememberMe" name="RememberMe" />
-              Remember Me</label
+              Subscribe to newsletter</label
             >
           </div>
           <!-- <p>Remember Me</p> -->
-          <div>
-            <a href="forgotpassword.html">Forgot password?</a>
-          </div>
+          <!-- <div>
+            <a href="#">Forgot password?</a>
+          </div> -->
         </div>
-        <input type="button" class="btn" id="btn" value="Log in" />
+        <input type="button" class="btn" id="btn" value="Become a member" />
         <span class="line"><hr /></span>
         <div class="signup">
-          <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+          <p>Already have an account? <a href="index.html">Log in</a></p>
         </div>
       </div>
     </div>
