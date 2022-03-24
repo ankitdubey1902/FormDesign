@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+            <img src="img/icons8-key.svg" alt="key" />
+          </div>
+          <h2 class="logo-h2">Log in</h2>
+        </div>
+        
+        <p>
+          Become a member - you'll enjoy exculsive deals, offers, invites and
+          rewards.
+        </p>
+        <span class="line"><hr /></span>
+        <label id="lblusername" for="txtusername" name="lbluser"
+          >Email <span class="danger">*</span></label
+        ><br />
+        <input
+          id="txtusername"
+          type="text"
+          placeholder="Enter your email"
+        /><br />
+        <label id="lblpassword" for="txtpassword" name="lblpassword"
+          >Password <span class="danger">*</span></label
+        ><br />
+        <input
+          id="txtpassword"
+          type="password"
+          placeholder="Enter your password"
+        /><br />
+        <div class="form-group">
+          <div>
+            <label>
+              <input type="checkbox" id="chcRememberMe" name="RememberMe" />
+              Remember Me</label
+            >
+          </div>
+          <!-- <p>Remember Me</p> -->
+          <div>
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <input type="button" class="btn" id="btn" value="Log in" />
+        <span class="line"><hr /></span>
+        <div class="signup">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
